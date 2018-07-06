@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA4A77D220EFC83700D4275D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77D120EFC83700D4275D /* AppDelegate.swift */; };
+		DA4A77D420EFC83700D4275D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77D320EFC83700D4275D /* ViewController.swift */; };
+		DA4A77D720EFC83700D4275D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77D520EFC83700D4275D /* Main.storyboard */; };
+		DA4A77DA20EFC83700D4275D /* MyAchensee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77D820EFC83700D4275D /* MyAchensee.xcdatamodeld */; };
+		DA4A77DC20EFC83900D4275D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77DB20EFC83900D4275D /* Assets.xcassets */; };
+		DA4A77DF20EFC83900D4275D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77DD20EFC83900D4275D /* LaunchScreen.storyboard */; };
+		DA4A77EA20EFC83900D4275D /* MyAchenseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77E920EFC83900D4275D /* MyAchenseeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA4A77E620EFC83900D4275D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4A77C620EFC83700D4275D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4A77CD20EFC83700D4275D;
+			remoteInfo = MyAchensee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA4A77CE20EFC83700D4275D /* MyAchensee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAchensee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4A77D120EFC83700D4275D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA4A77D320EFC83700D4275D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA4A77D620EFC83700D4275D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA4A77D920EFC83700D4275D /* MyAchensee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyAchensee.xcdatamodel; sourceTree = "<group>"; };
+		DA4A77DB20EFC83900D4275D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA4A77DE20EFC83900D4275D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA4A77E020EFC83900D4275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4A77E520EFC83900D4275D /* MyAchenseeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAchenseeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4A77E920EFC83900D4275D /* MyAchenseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAchenseeTests.swift; sourceTree = "<group>"; };
+		DA4A77EB20EFC83900D4275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA4A77CB20EFC83700D4275D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4A77E220EFC83900D4275D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA4A77C520EFC83700D4275D = {
+			isa = PBXGroup;
+			children = (
+				DA4A77D020EFC83700D4275D /* MyAchensee */,
+				DA4A77E820EFC83900D4275D /* MyAchenseeTests */,
+				DA4A77CF20EFC83700D4275D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA4A77CF20EFC83700D4275D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A77CE20EFC83700D4275D /* MyAchensee.app */,
+				DA4A77E520EFC83900D4275D /* MyAchenseeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA4A77D020EFC83700D4275D /* MyAchensee */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A77D120EFC83700D4275D /* AppDelegate.swift */,
+				DA4A77D320EFC83700D4275D /* ViewController.swift */,
+				DA4A77D520EFC83700D4275D /* Main.storyboard */,
+				DA4A77DB20EFC83900D4275D /* Assets.xcassets */,
+				DA4A77DD20EFC83900D4275D /* LaunchScreen.storyboard */,
+				DA4A77E020EFC83900D4275D /* Info.plist */,
+				DA4A77D820EFC83700D4275D /* MyAchensee.xcdatamodeld */,
+			);
+			path = MyAchensee;
+			sourceTree = "<group>";
+		};
+		DA4A77E820EFC83900D4275D /* MyAchenseeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A77E920EFC83900D4275D /* MyAchenseeTests.swift */,
+				DA4A77EB20EFC83900D4275D /* Info.plist */,
+			);
+			path = MyAchenseeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA4A77CD20EFC83700D4275D /* MyAchensee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4A77EE20EFC83900D4275D /* Build configuration list for PBXNativeTarget "MyAchensee" */;
+			buildPhases = (
+				DA4A77CA20EFC83700D4275D /* Sources */,
+				DA4A77CB20EFC83700D4275D /* Frameworks */,
+				DA4A77CC20EFC83700D4275D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAchensee;
+			productName = MyAchensee;
+			productReference = DA4A77CE20EFC83700D4275D /* MyAchensee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA4A77E420EFC83900D4275D /* MyAchenseeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4A77F120EFC83900D4275D /* Build configuration list for PBXNativeTarget "MyAchenseeTests" */;
+			buildPhases = (
+				DA4A77E120EFC83900D4275D /* Sources */,
+				DA4A77E220EFC83900D4275D /* Frameworks */,
+				DA4A77E320EFC83900D4275D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4A77E720EFC83900D4275D /* PBXTargetDependency */,
+			);
+			name = MyAchenseeTests;
+			productName = MyAchenseeTests;
+			productReference = DA4A77E520EFC83900D4275D /* MyAchenseeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA4A77C620EFC83700D4275D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = tyrol.industries;
+				TargetAttributes = {
+					DA4A77CD20EFC83700D4275D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DA4A77E420EFC83900D4275D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DA4A77CD20EFC83700D4275D;
+					};
+				};
+			};
+			buildConfigurationList = DA4A77C920EFC83700D4275D /* Build configuration list for PBXProject "MyAchensee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA4A77C520EFC83700D4275D;
+			productRefGroup = DA4A77CF20EFC83700D4275D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA4A77CD20EFC83700D4275D /* MyAchensee */,
+				DA4A77E420EFC83900D4275D /* MyAchenseeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA4A77CC20EFC83700D4275D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4A77DF20EFC83900D4275D /* LaunchScreen.storyboard in Resources */,
+				DA4A77DC20EFC83900D4275D /* Assets.xcassets in Resources */,
+				DA4A77D720EFC83700D4275D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4A77E320EFC83900D4275D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA4A77CA20EFC83700D4275D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4A77DA20EFC83700D4275D /* MyAchensee.xcdatamodeld in Sources */,
+				DA4A77D420EFC83700D4275D /* ViewController.swift in Sources */,
+				DA4A77D220EFC83700D4275D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4A77E120EFC83900D4275D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4A77EA20EFC83900D4275D /* MyAchenseeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA4A77E720EFC83900D4275D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4A77CD20EFC83700D4275D /* MyAchensee */;
+			targetProxy = DA4A77E620EFC83900D4275D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA4A77D520EFC83700D4275D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4A77D620EFC83700D4275D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA4A77DD20EFC83900D4275D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4A77DE20EFC83900D4275D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA4A77EC20EFC83900D4275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA4A77ED20EFC83900D4275D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA4A77EF20EFC83900D4275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyAchensee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tyrol.industries.MyAchensee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA4A77F020EFC83900D4275D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyAchensee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tyrol.industries.MyAchensee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA4A77F220EFC83900D4275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyAchenseeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tyrol.industries.MyAchenseeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAchensee.app/MyAchensee";
+			};
+			name = Debug;
+		};
+		DA4A77F320EFC83900D4275D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyAchenseeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tyrol.industries.MyAchenseeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAchensee.app/MyAchensee";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA4A77C920EFC83700D4275D /* Build configuration list for PBXProject "MyAchensee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4A77EC20EFC83900D4275D /* Debug */,
+				DA4A77ED20EFC83900D4275D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4A77EE20EFC83900D4275D /* Build configuration list for PBXNativeTarget "MyAchensee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4A77EF20EFC83900D4275D /* Debug */,
+				DA4A77F020EFC83900D4275D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4A77F120EFC83900D4275D /* Build configuration list for PBXNativeTarget "MyAchenseeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4A77F220EFC83900D4275D /* Debug */,
+				DA4A77F320EFC83900D4275D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA4A77D820EFC83700D4275D /* MyAchensee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA4A77D920EFC83700D4275D /* MyAchensee.xcdatamodel */,
+			);
+			currentVersion = DA4A77D920EFC83700D4275D /* MyAchensee.xcdatamodel */;
+			path = MyAchensee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA4A77C620EFC83700D4275D /* Project object */;
+}
