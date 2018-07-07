@@ -14,6 +14,7 @@
 		DA4A77DC20EFC83900D4275D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77DB20EFC83900D4275D /* Assets.xcassets */; };
 		DA4A77DF20EFC83900D4275D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77DD20EFC83900D4275D /* LaunchScreen.storyboard */; };
 		DA4A77EA20EFC83900D4275D /* MyAchenseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77E920EFC83900D4275D /* MyAchenseeTests.swift */; };
+		DA4A77F720EFD04700D4275D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77F620EFD04700D4275D /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		DA4A77E520EFC83900D4275D /* MyAchenseeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAchenseeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4A77E920EFC83900D4275D /* MyAchenseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAchenseeTests.swift; sourceTree = "<group>"; };
 		DA4A77EB20EFC83900D4275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4A77F620EFD04700D4275D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				DA4A77D120EFC83700D4275D /* AppDelegate.swift */,
 				DA4A77D320EFC83700D4275D /* ViewController.swift */,
+				DA4A77F620EFD04700D4275D /* DetailsView.swift */,
 				DA4A77D520EFC83700D4275D /* Main.storyboard */,
 				DA4A77DB20EFC83900D4275D /* Assets.xcassets */,
 				DA4A77DD20EFC83900D4275D /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4A77DA20EFC83700D4275D /* MyAchensee.xcdatamodeld in Sources */,
+				DA4A77F720EFD04700D4275D /* DetailsView.swift in Sources */,
 				DA4A77D420EFC83700D4275D /* ViewController.swift in Sources */,
 				DA4A77D220EFC83700D4275D /* AppDelegate.swift in Sources */,
 			);

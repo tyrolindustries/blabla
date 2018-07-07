@@ -1,24 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GsF-9A-yRz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="Xfc-lE-F5o">
+            <objects>
+                <navigationController id="GsF-9A-yRz" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SXg-7d-4lr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QZ7-sz-HTm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsR-nV-W7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1095" y="112"/>
+        </scene>
+        <!--Wo bist du gerade?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAchensee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_3" translatesAutoresizingMaskIntoConstraints="NO" id="rfZ-ZO-TMS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rfZ-ZO-TMS" secondAttribute="height" multiplier="375:667" id="Bse-XX-cBN"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REg-qy-3Py">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="73O-W8-4KX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tL-WQ-oUF">
+                                            <rect key="frame" x="0.0" y="100" width="375" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="0tL-WQ-oUF" secondAttribute="height" multiplier="25:6" id="Fu1-GG-n04"/>
+                                            </constraints>
+                                            <state key="normal" image="Pertisau Button_4"/>
+                                            <connections>
+                                                <action selector="PertisauMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7im-Mt-Nyq"/>
+                                                <segue destination="SG1-6x-jq5" kind="show" identifier="PertisauMenü" id="gqf-Ej-ZeT"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpq-Kj-br9">
+                                            <rect key="frame" x="0.0" y="210" width="375" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="qpq-Kj-br9" secondAttribute="height" multiplier="25:6" id="pV8-QC-oq8"/>
+                                            </constraints>
+                                            <state key="normal" image="Maurach_Button"/>
+                                            <connections>
+                                                <action selector="MaurachMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0h-GD-L4Q"/>
+                                                <segue destination="SG1-6x-jq5" kind="show" identifier="MaurachMenü" id="cfr-sC-rkb"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqq-vU-4Ez">
+                                            <rect key="frame" x="0.0" y="320" width="375" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Kqq-vU-4Ez" secondAttribute="height" multiplier="25:6" id="ZQ9-uW-9Do"/>
+                                            </constraints>
+                                            <state key="normal" image="Achenkirch_Button"/>
+                                            <connections>
+                                                <action selector="AchenkirchMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="maj-W9-tSG"/>
+                                                <segue destination="SG1-6x-jq5" kind="show" identifier="AchenkirchMenü" id="DCi-J0-ntr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kqq-vU-4Ez" firstAttribute="leading" secondItem="73O-W8-4KX" secondAttribute="leading" id="1el-BT-Myb"/>
+                                        <constraint firstItem="Kqq-vU-4Ez" firstAttribute="top" secondItem="qpq-Kj-br9" secondAttribute="bottom" constant="20" id="2qe-L9-lWc"/>
+                                        <constraint firstItem="qpq-Kj-br9" firstAttribute="top" secondItem="0tL-WQ-oUF" secondAttribute="bottom" constant="20" id="4Zf-YS-BvI"/>
+                                        <constraint firstAttribute="trailing" secondItem="Kqq-vU-4Ez" secondAttribute="trailing" id="8OG-8z-ZiC"/>
+                                        <constraint firstItem="0tL-WQ-oUF" firstAttribute="leading" secondItem="73O-W8-4KX" secondAttribute="leading" id="Nh5-nn-rcc"/>
+                                        <constraint firstItem="0tL-WQ-oUF" firstAttribute="top" secondItem="73O-W8-4KX" secondAttribute="top" constant="100" id="Uko-1A-ceM"/>
+                                        <constraint firstAttribute="trailing" secondItem="qpq-Kj-br9" secondAttribute="trailing" id="cUu-xf-vFe"/>
+                                        <constraint firstAttribute="trailing" secondItem="0tL-WQ-oUF" secondAttribute="trailing" id="mFT-Fn-PYi"/>
+                                        <constraint firstItem="qpq-Kj-br9" firstAttribute="leading" secondItem="73O-W8-4KX" secondAttribute="leading" id="tdv-cV-e3M"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="REg-qy-3Py" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0Lw-zS-VhZ"/>
+                            <constraint firstItem="rfZ-ZO-TMS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8SQ-Wz-CEc"/>
+                            <constraint firstItem="REg-qy-3Py" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AhJ-xj-hnd"/>
+                            <constraint firstItem="REg-qy-3Py" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LFe-Av-ZnC"/>
+                            <constraint firstItem="rfZ-ZO-TMS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P7M-ZA-F4N"/>
+                            <constraint firstItem="rfZ-ZO-TMS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ebe-8D-bR5"/>
+                            <constraint firstItem="rfZ-ZO-TMS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vAN-xp-XhW"/>
+                            <constraint firstItem="REg-qy-3Py" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xNd-Ej-09Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Wo bist du gerade?" id="oog-YE-6DS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="111.99400299850076"/>
+        </scene>
+        <!--Details View-->
+        <scene sceneID="fPS-p0-Fhi">
+            <objects>
+                <viewController id="SG1-6x-jq5" customClass="DetailsView" customModule="MyAchensee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGB-9E-Wkc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtt-jD-RFY">
+                                <rect key="frame" x="56" y="323" width="264" height="315"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vtt-jD-RFY" firstAttribute="top" secondItem="z7w-cp-c9F" secondAttribute="top" constant="259" id="KJv-a4-Ncw"/>
+                            <constraint firstItem="z7w-cp-c9F" firstAttribute="bottom" secondItem="Vtt-jD-RFY" secondAttribute="bottom" constant="29" id="dEg-nd-9wq"/>
+                            <constraint firstItem="z7w-cp-c9F" firstAttribute="trailing" secondItem="Vtt-jD-RFY" secondAttribute="trailing" constant="55" id="f4q-et-xf3"/>
+                            <constraint firstItem="Vtt-jD-RFY" firstAttribute="leading" secondItem="z7w-cp-c9F" secondAttribute="leading" constant="56" id="iEN-Jx-6vH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z7w-cp-c9F"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qAZ-cw-kWm">
+                        <barButtonItem key="backBarButtonItem" title="Zurück" id="1fU-iQ-7Hh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="titlebar" destination="qAZ-cw-kWm" id="Rb5-X4-nod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQP-dL-YoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493.5999999999999" y="111.99400299850076"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Achenkirch_Button" width="1227" height="296"/>
+        <image name="Background_3" width="2976" height="3968"/>
+        <image name="Maurach_Button" width="1227" height="296"/>
+        <image name="Pertisau Button_4" width="1227" height="296"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DCi-J0-ntr"/>
+    </inferredMetricsTieBreakers>
 </document>
