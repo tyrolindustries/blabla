@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA008E5220F0E0B100AF1D5E /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA008E5120F0E0B100AF1D5E /* DetailsView.swift */; };
 		DA4A77D220EFC83700D4275D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77D120EFC83700D4275D /* AppDelegate.swift */; };
 		DA4A77D420EFC83700D4275D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77D320EFC83700D4275D /* ViewController.swift */; };
 		DA4A77D720EFC83700D4275D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77D520EFC83700D4275D /* Main.storyboard */; };
@@ -14,7 +15,9 @@
 		DA4A77DC20EFC83900D4275D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77DB20EFC83900D4275D /* Assets.xcassets */; };
 		DA4A77DF20EFC83900D4275D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A77DD20EFC83900D4275D /* LaunchScreen.storyboard */; };
 		DA4A77EA20EFC83900D4275D /* MyAchenseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77E920EFC83900D4275D /* MyAchenseeTests.swift */; };
-		DA4A77F720EFD04700D4275D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A77F620EFD04700D4275D /* DetailsView.swift */; };
+		DA92D66220F2950500138185 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92D66120F2950500138185 /* TableViewCell.swift */; };
+		DA92D66420F2979D00138185 /* TableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92D66320F2979D00138185 /* TableViewCellData.swift */; };
+		DA93BCE920F2338300A63FC2 /* Was kann ich jetzt gerade machen?.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93BCE820F2338300A63FC2 /* Was kann ich jetzt gerade machen?.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA008E5120F0E0B100AF1D5E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		DA4A77CE20EFC83700D4275D /* MyAchensee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAchensee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4A77D120EFC83700D4275D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4A77D320EFC83700D4275D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +43,9 @@
 		DA4A77E520EFC83900D4275D /* MyAchenseeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAchenseeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4A77E920EFC83900D4275D /* MyAchenseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAchenseeTests.swift; sourceTree = "<group>"; };
 		DA4A77EB20EFC83900D4275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4A77F620EFD04700D4275D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		DA92D66120F2950500138185 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DA92D66320F2979D00138185 /* TableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellData.swift; sourceTree = "<group>"; };
+		DA93BCE820F2338300A63FC2 /* Was kann ich jetzt gerade machen?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Was kann ich jetzt gerade machen?.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +89,10 @@
 			children = (
 				DA4A77D120EFC83700D4275D /* AppDelegate.swift */,
 				DA4A77D320EFC83700D4275D /* ViewController.swift */,
-				DA4A77F620EFD04700D4275D /* DetailsView.swift */,
+				DA008E5120F0E0B100AF1D5E /* DetailsView.swift */,
+				DA92D66120F2950500138185 /* TableViewCell.swift */,
+				DA92D66320F2979D00138185 /* TableViewCellData.swift */,
+				DA93BCEA20F233A700A63FC2 /* Untermenü (View Controller) */,
 				DA4A77D520EFC83700D4275D /* Main.storyboard */,
 				DA4A77DB20EFC83900D4275D /* Assets.xcassets */,
 				DA4A77DD20EFC83900D4275D /* LaunchScreen.storyboard */,
@@ -100,6 +109,15 @@
 				DA4A77EB20EFC83900D4275D /* Info.plist */,
 			);
 			path = MyAchenseeTests;
+			sourceTree = "<group>";
+		};
+		DA93BCEA20F233A700A63FC2 /* Untermenü (View Controller) */ = {
+			isa = PBXGroup;
+			children = (
+				DA93BCE820F2338300A63FC2 /* Was kann ich jetzt gerade machen?.swift */,
+			);
+			name = "Untermenü (View Controller)";
+			path = "Untermenü (View Controller)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA93BCE920F2338300A63FC2 /* Was kann ich jetzt gerade machen?.swift in Sources */,
+				DA92D66420F2979D00138185 /* TableViewCellData.swift in Sources */,
 				DA4A77DA20EFC83700D4275D /* MyAchensee.xcdatamodeld in Sources */,
-				DA4A77F720EFD04700D4275D /* DetailsView.swift in Sources */,
+				DA008E5220F0E0B100AF1D5E /* DetailsView.swift in Sources */,
+				DA92D66220F2950500138185 /* TableViewCell.swift in Sources */,
 				DA4A77D420EFC83700D4275D /* ViewController.swift in Sources */,
 				DA4A77D220EFC83700D4275D /* AppDelegate.swift in Sources */,
 			);

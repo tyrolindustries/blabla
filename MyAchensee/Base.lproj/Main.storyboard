@@ -26,7 +26,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsR-nV-W7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1095" y="112"/>
+            <point key="canvasLocation" x="-1100" y="112"/>
         </scene>
         <!--Wo bist du gerade?-->
         <scene sceneID="tne-QT-ifu">
@@ -55,8 +55,7 @@
                                             </constraints>
                                             <state key="normal" image="Pertisau Button_4"/>
                                             <connections>
-                                                <action selector="PertisauMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7im-Mt-Nyq"/>
-                                                <segue destination="SG1-6x-jq5" kind="show" identifier="PertisauMenü" id="gqf-Ej-ZeT"/>
+                                                <action selector="PertisauMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9m-Qq-4CJ"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpq-Kj-br9">
@@ -66,8 +65,7 @@
                                             </constraints>
                                             <state key="normal" image="Maurach_Button"/>
                                             <connections>
-                                                <action selector="MaurachMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0h-GD-L4Q"/>
-                                                <segue destination="SG1-6x-jq5" kind="show" identifier="MaurachMenü" id="cfr-sC-rkb"/>
+                                                <action selector="MaurachMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yLr-ef-zbf"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqq-vU-4Ez">
@@ -77,8 +75,7 @@
                                             </constraints>
                                             <state key="normal" image="Achenkirch_Button"/>
                                             <connections>
-                                                <action selector="AchenkirchMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="maj-W9-tSG"/>
-                                                <segue destination="SG1-6x-jq5" kind="show" identifier="AchenkirchMenü" id="DCi-J0-ntr"/>
+                                                <action selector="AchenkirchMenü:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXR-6W-tB8"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -111,54 +108,147 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Wo bist du gerade?" id="oog-YE-6DS"/>
+                    <connections>
+                        <segue destination="35v-4h-ndk" kind="show" identifier="PertisauMenü" id="WPg-UZ-w7R"/>
+                        <segue destination="35v-4h-ndk" kind="show" identifier="MaurachMenü" id="8eZ-mL-k1n"/>
+                        <segue destination="35v-4h-ndk" kind="show" identifier="AchenkirchMenü" id="vJT-N9-nWN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="111.99400299850076"/>
+            <point key="canvasLocation" x="121" y="112"/>
         </scene>
         <!--Details View-->
-        <scene sceneID="fPS-p0-Fhi">
+        <scene sceneID="bDU-ZM-82G">
             <objects>
-                <viewController id="SG1-6x-jq5" customClass="DetailsView" customModule="MyAchensee" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dGB-9E-Wkc">
+                <viewController id="35v-4h-ndk" customClass="DetailsView" customModule="MyAchensee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qs9-du-WuB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtt-jD-RFY">
-                                <rect key="frame" x="56" y="323" width="264" height="315"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_3" translatesAutoresizingMaskIntoConstraints="NO" id="Qkl-p8-6BT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qkl-p8-6BT" secondAttribute="height" multiplier="375:667" id="kO6-w0-CZ4"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-2V-C45">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Wh6-bp-upC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cr0-oe-kce">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" focusStyle="custom" rowHeight="120" id="ijG-Da-mIm" customClass="TableViewCell" customModule="MyAchensee" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ijG-Da-mIm" id="Ect-rA-9Qa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-WU-b8L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                                    <state key="normal" title="Was kann ich jetzt gerade machen?" backgroundImage="Background_2">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="i3a-WU-b8L" secondAttribute="bottom" id="DSl-Kf-mIx"/>
+                                                <constraint firstItem="i3a-WU-b8L" firstAttribute="leading" secondItem="Ect-rA-9Qa" secondAttribute="leading" id="GEo-aa-m0T"/>
+                                                <constraint firstItem="i3a-WU-b8L" firstAttribute="top" secondItem="Ect-rA-9Qa" secondAttribute="top" id="mmz-gY-lBk"/>
+                                                <constraint firstAttribute="trailing" secondItem="i3a-WU-b8L" secondAttribute="trailing" id="uAT-kJ-wFL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="35v-4h-ndk" id="rHf-03-uOK"/>
+                                    <outlet property="delegate" destination="35v-4h-ndk" id="Dcz-mf-BUX"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Vtt-jD-RFY" firstAttribute="top" secondItem="z7w-cp-c9F" secondAttribute="top" constant="259" id="KJv-a4-Ncw"/>
-                            <constraint firstItem="z7w-cp-c9F" firstAttribute="bottom" secondItem="Vtt-jD-RFY" secondAttribute="bottom" constant="29" id="dEg-nd-9wq"/>
-                            <constraint firstItem="z7w-cp-c9F" firstAttribute="trailing" secondItem="Vtt-jD-RFY" secondAttribute="trailing" constant="55" id="f4q-et-xf3"/>
-                            <constraint firstItem="Vtt-jD-RFY" firstAttribute="leading" secondItem="z7w-cp-c9F" secondAttribute="leading" constant="56" id="iEN-Jx-6vH"/>
+                            <constraint firstItem="cr0-oe-kce" firstAttribute="top" secondItem="OPj-1j-bdn" secondAttribute="top" id="3A1-nr-ZMd"/>
+                            <constraint firstItem="xpe-2V-C45" firstAttribute="bottom" secondItem="OPj-1j-bdn" secondAttribute="bottom" id="82v-LF-cuy"/>
+                            <constraint firstItem="xpe-2V-C45" firstAttribute="trailing" secondItem="OPj-1j-bdn" secondAttribute="trailing" id="94m-wJ-ICa"/>
+                            <constraint firstItem="Qkl-p8-6BT" firstAttribute="bottom" secondItem="OPj-1j-bdn" secondAttribute="bottom" id="9YD-Qq-VZX"/>
+                            <constraint firstItem="Qkl-p8-6BT" firstAttribute="top" secondItem="qs9-du-WuB" secondAttribute="top" id="H0C-qC-WwU"/>
+                            <constraint firstItem="xpe-2V-C45" firstAttribute="leading" secondItem="OPj-1j-bdn" secondAttribute="leading" id="Ipa-uW-zFM"/>
+                            <constraint firstItem="Qkl-p8-6BT" firstAttribute="leading" secondItem="OPj-1j-bdn" secondAttribute="leading" id="dw7-6c-6ke"/>
+                            <constraint firstItem="cr0-oe-kce" firstAttribute="leading" secondItem="OPj-1j-bdn" secondAttribute="leading" id="qdc-VY-659"/>
+                            <constraint firstItem="Qkl-p8-6BT" firstAttribute="trailing" secondItem="OPj-1j-bdn" secondAttribute="trailing" id="skZ-ri-IVr"/>
+                            <constraint firstItem="cr0-oe-kce" firstAttribute="trailing" secondItem="OPj-1j-bdn" secondAttribute="trailing" id="w0s-I4-xE1"/>
+                            <constraint firstItem="xpe-2V-C45" firstAttribute="top" secondItem="qs9-du-WuB" secondAttribute="top" id="wpK-ad-mHM"/>
+                            <constraint firstItem="cr0-oe-kce" firstAttribute="bottom" secondItem="OPj-1j-bdn" secondAttribute="bottom" id="xnq-aV-Nep"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="z7w-cp-c9F"/>
+                        <viewLayoutGuide key="safeArea" id="OPj-1j-bdn"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qAZ-cw-kWm">
-                        <barButtonItem key="backBarButtonItem" title="Zurück" id="1fU-iQ-7Hh"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="29N-nN-2iB"/>
                     <connections>
-                        <outlet property="titlebar" destination="qAZ-cw-kWm" id="Rb5-X4-nod"/>
+                        <outlet property="titlebar" destination="29N-nN-2iB" id="IFK-hf-A7h"/>
+                        <segue destination="A1T-gW-a1m" kind="show" identifier="Was kann ich jetzt gerade machen?Menü" id="mmf-ih-MYh"/>
+                        <segue destination="XDe-Db-Gva" kind="show" identifier="Events" id="Ce2-bw-ykD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AQP-dL-YoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dn1-ee-ujb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1493.5999999999999" y="111.99400299850076"/>
+            <point key="canvasLocation" x="1117.5999999999999" y="111.99400299850076"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="aUI-Tm-W65">
+            <objects>
+                <viewController id="XDe-Db-Gva" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ci-Eu-8b7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="A52-fh-6EH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events" id="qv0-A8-SYV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g30-kt-gaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="112"/>
+        </scene>
+        <!--Was kann ich jetzt gerade machen?-->
+        <scene sceneID="2Uu-7D-3y7">
+            <objects>
+                <viewController id="A1T-gW-a1m" customClass="Was_kann_ich_jetzt_gerade_machen_" customModule="MyAchensee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gEQ-5O-UOD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OSK-vX-6Qz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Was kann ich jetzt gerade machen?" id="zwz-8d-11c"/>
+                    <connections>
+                        <outlet property="titlebar" destination="zwz-8d-11c" id="oPD-HU-jyg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fw6-4y-Kdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="-608"/>
         </scene>
     </scenes>
     <resources>
         <image name="Achenkirch_Button" width="1227" height="296"/>
+        <image name="Background_2" width="3968" height="2976"/>
         <image name="Background_3" width="2976" height="3968"/>
         <image name="Maurach_Button" width="1227" height="296"/>
         <image name="Pertisau Button_4" width="1227" height="296"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DCi-J0-ntr"/>
+        <segue reference="vJT-N9-nWN"/>
     </inferredMetricsTieBreakers>
 </document>
